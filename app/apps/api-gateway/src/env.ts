@@ -29,12 +29,12 @@ try {
   env = envSchema.parse(process.env)
   } catch (e) {
     if (e instanceof z.ZodError) {
-      console.log('Invalid env variables');
+      console.error('Invalid env variables');
       console.error(JSON.stringify(e.issues, null, 2));
 
     e.issues.forEach(err => {
       const path = err.path.join('.')
-      console.log(`[${path}: ${err.message}`);
+      console.error(`[${path}]: ${err.message}`);
     })
 
     process.exit(1);
