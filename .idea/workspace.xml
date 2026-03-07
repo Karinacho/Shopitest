@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db122a61-ebff-43bd-9c31-b0fc4124ef0d" name="Changes" comment="feat: env setup">
-      <change afterPath="$PROJECT_DIR$/app/apps/api-gateway/src/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/apps/api-gateway/src/routes/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/apps/api-gateway/src/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/apps/api-gateway/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/apps/api-gateway/src/main.ts" afterDir="false" />
+    <list default="true" id="db122a61-ebff-43bd-9c31-b0fc4124ef0d" name="Changes" comment="feat: refactoring">
+      <change beforePath="$PROJECT_DIR$/app/apps/api-gateway/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/apps/api-gateway/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/shared/types/src/custom-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/shared/types/src/express.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/shared/types/src/lib/express.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/shared/types/src/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/shared/types/src/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/shared/types/src/lib/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/nx.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/nx.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,30 +51,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#1 on backend-setup&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/karinacholakova/WebstormProjects/essshop/app/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "#1 on backend-setup",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/karinacholakova/WebstormProjects/essshop/app/libs/shared/types/src/lib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/Users/karinacholakova/WebstormProjects/essshop/app/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/libs/shared/types/src/lib" />
+      <recent name="$PROJECT_DIR$/app/libs/shared/types/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/libs/shared/types/src/lib" />
       <recent name="$PROJECT_DIR$/app/apps/api-gateway" />
     </key>
   </component>
@@ -90,7 +100,7 @@
       <updated>1772821934268</updated>
       <workItem from="1772821935296" duration="27887000" />
       <workItem from="1772894440510" duration="197000" />
-      <workItem from="1772894642340" duration="4442000" />
+      <workItem from="1772894642340" duration="11031000" />
     </task>
     <task id="LOCAL-00001" summary="feat: nx setup and middleware">
       <option name="closed" value="true" />
@@ -124,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772896874289</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: refactoring">
+      <option name="closed" value="true" />
+      <created>1772900484921</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772900484921</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +152,7 @@
     <MESSAGE value="feat: nx setup and middleware" />
     <MESSAGE value="feat: middleware and proxy" />
     <MESSAGE value="feat: env setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: env setup" />
+    <MESSAGE value="feat: refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: refactoring" />
   </component>
 </project>
