@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db122a61-ebff-43bd-9c31-b0fc4124ef0d" name="Changes" comment="feat: nx setup and middleware">
-      <change afterPath="$PROJECT_DIR$/app/apps/api-gateway/src/middleware/rateLimit.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/shared/types/src/express.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/shared/types/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/shared/types/src/user.ts" afterDir="false" />
+    <list default="true" id="db122a61-ebff-43bd-9c31-b0fc4124ef0d" name="Changes" comment="feat: middleware and proxy">
+      <change afterPath="$PROJECT_DIR$/app/apps/api-gateway/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/shared/utils/esmPaths.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/apps/api-gateway/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/apps/api-gateway/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/apps/api-gateway/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/apps/api-gateway/tsconfig.app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tsconfig.base.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/tsconfig.base.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,31 +21,31 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="6" />
+    <option name="cachedIndexableFilesCount" value="168" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Karinacho"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Karinacho&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Karinacho/Shopitest.git",
-    "accountId": "9374b80f-ff13-4a83-8f72-ee65c0d83d8a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Karinacho/Shopitest.git&quot;,
+    &quot;accountId&quot;: &quot;9374b80f-ff13-4a83-8f72-ee65c0d83d8a&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="3AaDl24DxGu0w4Ldk4vyVxbSB2K" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -60,7 +60,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "backend-setup",
+    "git-widget-placeholder": "#1 on backend-setup",
     "javascript.preferred.runtime.type.id": "node",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
@@ -73,6 +73,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/apps/api-gateway" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -87,7 +92,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1772821934268</updated>
-      <workItem from="1772821935296" duration="16007000" />
+      <workItem from="1772821935296" duration="27887000" />
+      <workItem from="1772894440510" duration="197000" />
     </task>
     <task id="LOCAL-00001" summary="feat: nx setup and middleware">
       <option name="closed" value="true" />
@@ -97,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772870237095</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: middleware and proxy">
+      <option name="closed" value="true" />
+      <created>1772878037474</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1772878037474</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: nx setup and middleware" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: nx setup and middleware" />
+    <MESSAGE value="feat: middleware and proxy" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: middleware and proxy" />
   </component>
 </project>

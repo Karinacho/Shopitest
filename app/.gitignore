@@ -42,3 +42,8 @@ Thumbs.db
 .nx/workspace-data
 
 test-output
+
+**/.env
+**/.env.local
+**/.env.development
+**/.env.production
