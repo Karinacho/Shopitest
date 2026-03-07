@@ -6,6 +6,6 @@
     "rootDir": "src",
     "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo"
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "../../libs/shared/types/src/express.d.ts"],
   "exclude": []
 }

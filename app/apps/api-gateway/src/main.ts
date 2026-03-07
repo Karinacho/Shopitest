@@ -1,11 +1,13 @@
 import express from 'express';
 
-import {corsMiddleware} from "./middleware/cors";
-import {loggerMiddleware} from "./middleware/logger";
-import {jsonParser, urlencodedParser, cookie} from "./middleware/parser";
+import { corsMiddleware } from './middleware/cors';
+import { loggerMiddleware } from './middleware/logger';
+import { jsonParser, urlencodedParser, cookie } from './middleware/parser';
+import {limiter} from "./middleware/rateLimit";
+
 import proxy from 'express-http-proxy';
 
-import rateLimit from "express-rate-limit";
+
 import swaggerUi from 'swagger-ui-express';
 import axios from 'axios';
 
@@ -19,13 +21,13 @@ app.use(urlencodedParser);
 app.use(cookie);
 app.set('trust proxy', 1);
 
-//Apply rate limit
+app.use(limiter)
 
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
-
-app.get('/api', (req, res) => {
+app.get('/gateway-health', (req, res) => {
   res.send({ message: 'Welcome to api-gateway!' });
 });
+
+app.use('/', proxy('http://localhost:6001'))
 
 const port = process.env.PORT || 8080;
 const server = app.listen(port, () => {
