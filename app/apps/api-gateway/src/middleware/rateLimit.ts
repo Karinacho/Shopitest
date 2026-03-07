@@ -1,4 +1,4 @@
-import rateLimit from 'express-rate-limit';
+import rateLimit, { ipKeyGenerator } from 'express-rate-limit';
 
 export const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, //time window 15 min
@@ -6,5 +6,5 @@ export const limiter = rateLimit({
   message: {error: "Too many requests, please try again later"},
   standardHeaders: true,
   legacyHeaders: true,
-  keyGenerator: (req) => req.ip ?? req.socket.remoteAddress ?? 'unknown'
+  keyGenerator: (req) => req.user?.id ?? ipKeyGenerator(req.ip ?? req.socket.remoteAddress ?? '')
 });

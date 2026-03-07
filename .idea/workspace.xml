@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db122a61-ebff-43bd-9c31-b0fc4124ef0d" name="Changes" comment="refactor: refactoring">
-      <change afterPath="$PROJECT_DIR$/app/apps/auth-service/src/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/apps/auth-service/src/env.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/apps/auth-service/src/routes/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/apps/auth-service/src/server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/shared/middleware/src/lib/cors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/apps/api-gateway/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/apps/api-gateway/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/apps/api-gateway/src/middleware/cors.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/apps/api-gateway/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/apps/api-gateway/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/apps/auth-service/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/apps/auth-service/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/apps/auth-service/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/apps/auth-service/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/libs/shared/middleware/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/shared/middleware/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/apps/api-gateway/src/middleware/rateLimit.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/apps/api-gateway/src/middleware/rateLimit.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +92,7 @@
       <updated>1772821934268</updated>
       <workItem from="1772821935296" duration="27887000" />
       <workItem from="1772894440510" duration="197000" />
-      <workItem from="1772894642340" duration="13913000" />
+      <workItem from="1772894642340" duration="15168000" />
     </task>
     <task id="LOCAL-00001" summary="feat: nx setup and middleware">
       <option name="closed" value="true" />
@@ -152,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772907619137</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactor: refactoring">
+      <option name="closed" value="true" />
+      <created>1772910467407</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1772910467408</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
