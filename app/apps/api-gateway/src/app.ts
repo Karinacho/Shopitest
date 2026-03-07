@@ -5,11 +5,12 @@ import { loggerMiddleware } from './middleware/logger';
 import { jsonParser, urlencodedParser, cookie } from './middleware/parser';
 import {limiter} from "./middleware/rateLimit";
 import { routes } from './routes';
+import env from "./env";
 
 const app = express();
 
 //Trust proxy
-app.set('trust proxy', 1);
+app.set('trust proxy', env.TRUST_PROXY);
 
 //Middleware
 app.use(corsMiddleware);
@@ -17,6 +18,7 @@ app.use(loggerMiddleware);
 app.use(jsonParser);
 app.use(urlencodedParser);
 app.use(cookie);
+// app.use(authMiddleware); // ← populates req.user ✅ TODO
 app.use(limiter)
 
 //Routes
