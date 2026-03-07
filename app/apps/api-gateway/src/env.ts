@@ -8,7 +8,7 @@ const stage = process.env.APP_STAGE ?? 'dev';
 const result = dotenv.config({ path: `.env.${stage}` });
 
 if (result.error) {
-  dotenv.config({ path: `.env}` });
+  dotenv.config({ path: `.env` });
 }
 
 

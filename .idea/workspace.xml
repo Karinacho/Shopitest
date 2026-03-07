@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db122a61-ebff-43bd-9c31-b0fc4124ef0d" name="Changes" comment="fix: rateLimit bucket issue">
-      <change beforePath="$PROJECT_DIR$/app/apps/api-gateway/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/app/apps/api-gateway/.env.example" afterDir="false" />
+    <list default="true" id="db122a61-ebff-43bd-9c31-b0fc4124ef0d" name="Changes" comment="fix: env small fixes">
       <change beforePath="$PROJECT_DIR$/app/apps/api-gateway/src/env.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/apps/api-gateway/src/env.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +92,7 @@
       <updated>1772821934268</updated>
       <workItem from="1772821935296" duration="27887000" />
       <workItem from="1772894440510" duration="197000" />
-      <workItem from="1772894642340" duration="15943000" />
+      <workItem from="1772894642340" duration="16499000" />
     </task>
     <task id="LOCAL-00001" summary="feat: nx setup and middleware">
       <option name="closed" value="true" />
@@ -159,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772911732975</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix: env small fixes">
+      <option name="closed" value="true" />
+      <created>1772912529482</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1772912529482</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +179,7 @@
     <MESSAGE value="feat: refactoring" />
     <MESSAGE value="refactor: refactoring" />
     <MESSAGE value="fix: rateLimit bucket issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: rateLimit bucket issue" />
+    <MESSAGE value="fix: env small fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: env small fixes" />
   </component>
 </project>
