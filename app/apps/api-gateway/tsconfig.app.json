@@ -11,5 +11,10 @@
     "src/**/*.d.ts",
     "../../libs/shared/types/src/lib/express.d.ts"
   ],
-  "exclude": []
+  "exclude": [],
+  "references": [
+    {
+      "path": "../../libs/shared/middleware/tsconfig.lib.json"
+    }
+  ]
 }
