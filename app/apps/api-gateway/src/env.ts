@@ -1,17 +1,16 @@
-import { env as loadEnv } from 'custom-env';
+import dotenv from 'dotenv';
+
 import { z } from 'zod';
 
-process.env.APP_STAGE = process.env.APP_STAGE || 'dev';
+const stage = process.env.APP_STAGE ?? 'dev';
 
-const isProduction = process.env.APP_STAGE === 'production';
-const isDevelopment = process.env.APP_STAGE === 'development';
-const isTesting = process.env.APP_STAGE === 'test';
+// Load the correct .env file based on APP_STAGE
+const result = dotenv.config({ path: `.env.${stage}` });
 
-if (isDevelopment) {
-  loadEnv()
-} else if (isTesting) {
-  loadEnv('test')
+if (result.error) {
+  dotenv.config({ path: `.env}` });
 }
+
 
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
