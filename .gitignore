@@ -9,7 +9,8 @@ out-tsc
 app/node_modules
 
 # IDEs and editors
-/.idea
+node_modules/
+.idea/
 .project
 .classpath
 .c9/
@@ -38,6 +39,7 @@ testem.log
 .DS_Store
 Thumbs.db
 
+.nx/
 ../.nx/cache
 ../.nx/workspace-data
 
