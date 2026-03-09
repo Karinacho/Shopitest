@@ -49,3 +49,5 @@ test-output
 **/.env.local
 **/.env.development
 **/.env.production
+
+/generated/prisma
