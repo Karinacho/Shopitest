@@ -51,3 +51,5 @@ test-output
 **/.env.production
 
 /generated/prisma
+
+/generated/prisma
